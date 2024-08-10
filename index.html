@@ -11,6 +11,8 @@
 </head>
 <link rel="stylesheet" type="text/css" href="styles.css">
 <body>
+  <div>
+    <header>
     <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
             <nav class="navbar bg-body-tertiary">
@@ -39,6 +41,7 @@
                           <li><a class="dropdown-item text-danger" href="#">Log out</a> </li>
                         </ul>
                       </div>
+                  </header>
             </div>
       </nav>
   <div class="modal fade" id="examplemodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -70,19 +73,22 @@
        </div>
     </div>
   </div>
-  <div>
-    <ul class="nav nav-tabs" id="myTab" role="tablist">
+  </div>
+  <div class="container-fluid table">
+    <!-- Justify should be in css?-->
+    <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
       <li class="nav-item" role="presentation">
-        <a class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
-         type="button" role="tab" aria-controls="home" aria-selected="true"><i class="fa-solid fa-table-cells"></i></a>
+        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+         type="button" role="tab" aria-controls="home" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
       </li>
       <li class="nav-item" role="presentation">
-        <a class="nav-link" id="profile-tab" data-bs-toggle="tab" 
-        data-bs-target="#tab" type="button" role="tab" aria-controls="profile" aria-selected="false"><i class="fa-solid fa-square"></i></a>
+        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" 
+        data-bs-target="#tab" type="button" role="tab" aria-controls="profile" aria-selected="false"><i class="fa-solid fa-square"></i></button>
       </li>
     </ul>
+    </div>
+    <!-- 3 pcitures here-->
     <div class="tab-content" id="myTabContent">
-      <!-- 3 pcitures here-->
       <div class="tab-pane fade show active overflow-hidden" id="home" role="tabpanel" aria-labelledby="home-tab">
         <div class="row">
             <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://picsum.photos/id/96/2000/3000" class="img-fluid w-100" alt=""></div>
@@ -99,21 +105,81 @@
           <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://picsum.photos/id/255/4000/4000" class="img-fluid w-100" alt=""></div>
           <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://picsum.photos/id/364/5000/5000" class="img-fluid w-100" alt=""></div>
       </div>
+      </div>
   </div>
-  <div class="tab-pane fade overflow-hidden" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-    <div class="row my-4">
-        <div class="col-4 mx-auto border rounded p-0">
-            <div class="d-flex p-2">
-                <div class="w-100 fs-4">My Crazy dog Spark!</div>
-                <small class="align-bottom">08/26</small>
+  <!-- single row pictures-->
+   <div class="container">
+        <div class="post">
+          <div class="post-header">
+            <div>
+               <h5>PS4 Controller</h5>
+               </div><div>
+                 <span>08/09</span>
+               </div>
             </div>
-            <img style="object-fit: cover;" src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?ixlib=rb-1.2.1&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb" class="img-fluid w-100 col-12" alt=""/>
-            <div class="p-2">
-                <strong>204 Likes</strong>
-                <p>This is an example of a very good photo that you can post on instagram</p>
+          <div>
+             <img src="https://picsum.photos/id/96/2000/1500"class="img-fluid w-150"></img>
+              <strong>13559 Likes</strong>
             </div>
+           <div>
+              <p>Seeing this control bring back many great memories.</p>
+           </div>
+      </div>
+  </div>
+    <!-- photo two-->
+    <div class="container">
+      <div class="post">
+        <div class="post-header">
+          <div>
+             <h5>Off to Cancun!!!</h5>
+            </div><div>
+               <span>05/06</span>
+             </div>
+          </div>
+        <div>
+           <img src="https://picsum.photos/id/364/2000/1500" class="img-fluid w-100"></img>
+            <strong>2512 Likes</strong>
+          </div>
+         <div>
+            <p>It's been years since I have been on vacation.</p>
+         </div>
+      </div>
+  </div>
+  <div class="container">
+    <div class="post">
+      <div class="post-header">
+        <div>
+           <h5>Studying to get better in life.</h5>
+          </div><div>
+             <span>08/06</span>
+           </div>
         </div>
+      <div>
+         <img src="https://picsum.photos/id/180/2000/1500" class="img-fluid w-100"></img>
+          <strong>450 Likes</strong>
+        </div>
+       <div>
+          <p>Knowledge is key for a successful life.</p>
+       </div>
     </div>
+</div>
+<div class="container">
+  <div class="post">
+    <div class="post-header">
+      <div>
+         <h5>Beach Time!!!</h5>
+        </div><div>
+           <span>12/25</span>
+         </div>
+      </div>
+    <div>
+       <img src="https://picsum.photos/id/215/2000/1500" class="img-fluid w-100"></img>
+        <strong>6523 Likes</strong>
+      </div>
+     <div>
+        <p>Hopefully I remember how to float!!</p>
+     </div>
   </div>
+</div>
 </body>
 </html>
