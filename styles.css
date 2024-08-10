@@ -8,7 +8,7 @@ body{
 div.post{
     max-width: 90%;
     height: auto;
-    margin-top: 10px;
+    margin-top: 50px;
 }
 div.post img{
     width: 100%;
@@ -22,10 +22,6 @@ div.post .post-header div:last-child{
     width: 20%;
     padding: 10px;
     text-align: right;
-}
-div.post h5, div.post p{
-    padding: 10px;
-    margin: 0;
 }
 div.container{
     width: 600px;
