@@ -2,28 +2,6 @@ body{
     background-color: white;
     margin: 0;
 }
-.tab-content{
-    padding: 10px;
-}
-div.post{
-    max-width: 90%;
-    height: auto;
-    margin-top: 50px;
-}
-div.post img{
-    width: 100%;
-}
-div.post .post-header div:first-child{
-    display: inline-block;
-    width: 80%;
-}
-div.post .post-header div:last-child{
-    display: inline-block;
-    width: 20%;
-    padding: 10px;
-    text-align: right;
-}
-div.container{
-    width: 600px;
-    margin: auto;
+.span{
+    
 }
